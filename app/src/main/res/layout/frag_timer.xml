@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrain_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".timer.TimerActivity">
+
+    <com.shark.apollo.deeplearning.timer.OProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="373dp"
+        android:layout_height="424dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        app:progressRadius="120dp"
+        app:progressTextSize="52sp"
+        app:progressWidth="4dp"
+        app:progressTextColor="@color/colorAzure4"
+        app:progressBackgroundColor="@color/colorGrey21"/>
+
+    <ImageView
+        android:id="@+id/iv_record"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/vector_drawable_record" />
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/svg_settings_black" />
+
+    <ImageView
+        android:id="@+id/iv_user_info"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_drawable_user" />
+
+</android.support.constraint.ConstraintLayout>
